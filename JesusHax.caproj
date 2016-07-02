@@ -43,7 +43,7 @@
         <object-type name="Sprite" sid="5295109483737935">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9774826122806974" speed="5">
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9774826122806974" speed="0">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\Platformer pack\Tile extension pack\PNG Grass\grassHalf.png">
                         <collision-poly>
                             <point x="0" y="0.146429" />
