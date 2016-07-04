@@ -10,7 +10,11 @@
     <unique-id>1d5vvkwibr0i4</unique-id>
     <saved-with-version>22700</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors />
     <used-effects />
@@ -35,7 +39,7 @@
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
         <prop name="Preload sounds">Yes</prop>
-        <prop name="Preview browser">(default)</prop>
+        <prop name="Preview browser">Chrome</prop>
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
@@ -88,16 +92,117 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Sprite" sid="2937530999494108">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2355637547672434" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="4320713576505924">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\construct 2\Sprites\UI elements\Adventure pack\cursorSword_gold.png" />
+        </object-type>
+        <object-type name="Breadman" sid="5855648290027061">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Touch" sid="1211845911366631">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="Mouse" sid="2270523587487716">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="PLay" sid="1004773234503895">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Controls" sid="2582742948747152">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="ControlsTitle" sid="9729327227167962">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Story" sid="1505411297739642">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite2" sid="3420264297337294">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8444589102375134" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ControlsNames" sid="9103418590681237">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="backgroundBread" sid="4118875605105488">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\Final Project TyChrJer\HEEELp\Smile.png" />
+        </object-type>
+        <object-type name="TiledBackground3" sid="3014104719956197">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\Final Project TyChrJer\HEEELp\download.jpg" />
+        </object-type>
+        <object-type name="Sprite4" sid="900439081373607">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3153553895173499" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502825" original-source="D:\Final Project TyChrJer\HEEELp\download.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ControlsBackground" sid="8991061466052111">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7851781036036149" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502825" original-source="D:\Final Project TyChrJer\HEEELp\download.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BreadmanStoryTitle" sid="6066961237609792">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="ONceUponATIme" sid="8217793980042937">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="back" sid="6272756746030347">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TheTaleOf" sid="249291262266792">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text" sid="9930101924978068">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text2" sid="7497927600899234">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Layout 1.xml</layout>
+        <layout>Main Screen.xml</layout>
+        <layout>Controls.xml</layout>
+        <layout>Story.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Main Screen Events.xml</event-sheet>
+        <event-sheet>Control Events.xml</event-sheet>
+        <event-sheet>Story Events.xml</event-sheet>
     </event-folder>
-    <global-instances />
-    <sounds-folder />
+    <global-instances>
+        <global-instance type="Touch" uid="108">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Mouse" uid="109" />
+    </global-instances>
+    <sounds-folder>
+        <file name="mr_clown (1).ogg" />
+    </sounds-folder>
     <music-folder />
     <files-folder>
         <file-folder name="Icons">
