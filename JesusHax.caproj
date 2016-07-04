@@ -92,14 +92,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite" sid="2937530999494108">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2355637547672434" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="TiledBackground" sid="4320713576505924">
             <plugin id="TiledBg" />
             <texture original-source="D:\construct 2\Sprites\UI elements\Adventure pack\cursorSword_gold.png" />
@@ -125,14 +117,6 @@
         <object-type name="Story" sid="1505411297739642">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Sprite2" sid="3420264297337294">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8444589102375134" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="ControlsNames" sid="9103418590681237">
             <plugin id="Text" />
         </object-type>
@@ -143,14 +127,6 @@
         <object-type name="TiledBackground3" sid="3014104719956197">
             <plugin id="TiledBg" />
             <texture original-source="D:\Final Project TyChrJer\HEEELp\download.jpg" />
-        </object-type>
-        <object-type name="Sprite4" sid="900439081373607">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3153553895173499" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.502825" original-source="D:\Final Project TyChrJer\HEEELp\download.jpg" />
-                </animation>
-            </animation-folder>
         </object-type>
         <object-type name="ControlsBackground" sid="8991061466052111">
             <plugin id="Sprite" />
