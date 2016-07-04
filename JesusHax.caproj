@@ -40,10 +40,10 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="Sprite" sid="5295109483737935">
+        <object-type name="Land" sid="5295109483737935">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9774826122806974" speed="5">
+                <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9774826122806974" speed="0">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\Platformer pack\Tile extension pack\PNG Grass\grassHalf.png">
                         <collision-poly>
                             <point x="0" y="0.146429" />
@@ -54,37 +54,37 @@
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
-                            <point x="0.0285714" y="0.0285714" />
-                            <point x="0.5" y="0" />
-                            <point x="0.971429" y="0.0285714" />
-                            <point x="0.985714" y="0.5" />
-                            <point x="0.571429" y="0.571429" />
-                            <point x="0.428571" y="0.571429" />
-                            <point x="0.0142857" y="0.5" />
+                            <point x="1.86265e-009" y="0.142857" />
+                            <point x="1" y="0.142857" />
+                            <point x="1" y="0.4" />
+                            <point x="0.214286" y="0.371429" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
-                            <point x="0.0285714" y="0.0285714" />
-                            <point x="0.5" y="0" />
-                            <point x="0.971429" y="0.0285714" />
-                            <point x="0.985714" y="0.5" />
-                            <point x="0.571429" y="0.571429" />
-                            <point x="0.428571" y="0.571429" />
-                            <point x="0.0142857" y="0.5" />
+                            <point x="0" y="0.146429" />
+                            <point x="1" y="0.146429" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                    <frame duration="1" hotspotX="0.471429" hotspotY="0.971429">
                         <collision-poly>
-                            <point x="0.0285714" y="0.0285714" />
-                            <point x="0.5" y="0" />
-                            <point x="0.971429" y="0.0285714" />
-                            <point x="0.985714" y="0.5" />
-                            <point x="0.571429" y="0.571429" />
-                            <point x="0.428571" y="0.571429" />
-                            <point x="0.0142857" y="0.5" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.714285" />
+                            <point x="0" y="0.714285" />
                         </collision-poly>
                     </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ZenGarden" sid="9157806622276208">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2584214868088108" speed="5">
+                    <frame duration="1" hotspotX="0.13875" hotspotY="0.202083" original-source="D:\Construct 2\Sprites\Tappy Plane\background.png" />
                 </animation>
             </animation-folder>
         </object-type>
