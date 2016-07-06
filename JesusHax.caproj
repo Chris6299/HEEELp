@@ -56,7 +56,7 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="790363954955804" speed="5">
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="790363954955804" speed="3">
                     <frame duration="1" hotspotX="0.3" hotspotY="0.4" original-source="D:\Construct 2\Sprites\Platformer pack\Extra animations and enemies\Alien sprites\alienGreen_swim1.png">
                         <collision-poly>
                             <point x="0.5925" y="0.3675" />
@@ -96,6 +96,70 @@
                             <point x="0.28" y="0.68125" />
                             <point x="0.0875002" y="0.635" />
                             <point x="0.26375" y="0.4" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="4" loop="1" name="Run" pingpong="0" repeatcount="1" repeatto="0" sid="7460150256" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.51">
+                        <collision-poly>
+                            <point x="0.157143" y="0.113402" />
+                            <point x="0.5" y="0.0103093" />
+                            <point x="0.842857" y="0.113402" />
+                            <point x="0.914286" y="0.494845" />
+                            <point x="0.742857" y="0.814433" />
+                            <point x="0.5" y="0.865979" />
+                            <point x="0.257143" y="0.814433" />
+                            <point x="0.0857143" y="0.494845" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.51" original-source="D:\Construct 2\Sprites\Platformer pack\Extra animations and enemies\Alien sprites\alienGreen_swim2.png">
+                        <collision-poly>
+                            <point x="0.157143" y="0.113402" />
+                            <point x="0.5" y="0.0103093" />
+                            <point x="0.842857" y="0.113402" />
+                            <point x="0.914286" y="0.494845" />
+                            <point x="0.742857" y="0.814433" />
+                            <point x="0.5" y="0.865979" />
+                            <point x="0.257143" y="0.814433" />
+                            <point x="0.0857143" y="0.494845" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.51">
+                        <collision-poly>
+                            <point x="0.157143" y="0.113402" />
+                            <point x="0.5" y="0.0103093" />
+                            <point x="0.842857" y="0.113402" />
+                            <point x="0.914286" y="0.494845" />
+                            <point x="0.742857" y="0.814433" />
+                            <point x="0.5" y="0.865979" />
+                            <point x="0.257143" y="0.814433" />
+                            <point x="0.0857143" y="0.494845" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.51">
+                        <collision-poly>
+                            <point x="0.157143" y="0.113402" />
+                            <point x="0.5" y="0.0103093" />
+                            <point x="0.842857" y="0.113402" />
+                            <point x="0.914286" y="0.494845" />
+                            <point x="0.742857" y="0.814433" />
+                            <point x="0.5" y="0.865979" />
+                            <point x="0.257143" y="0.814433" />
+                            <point x="0.0857143" y="0.494845" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Jump" pingpong="0" repeatcount="1" repeatto="0" sid="9577973706008872" speed="5">
+                    <frame duration="1" hotspotX="0.38" hotspotY="0.5" original-source="D:\Construct 2\Sprites\Platformer pack\Extra animations and enemies\Alien sprites\alienGreen_swim2.png">
+                        <collision-poly>
+                            <point x="0.157143" y="0.113402" />
+                            <point x="0.5" y="0.0103093" />
+                            <point x="0.842857" y="0.113402" />
+                            <point x="0.914286" y="0.494845" />
+                            <point x="0.742857" y="0.814433" />
+                            <point x="0.5" y="0.865979" />
+                            <point x="0.257143" y="0.814433" />
+                            <point x="0.0857143" y="0.494845" />
                         </collision-poly>
                     </frame>
                 </animation>
