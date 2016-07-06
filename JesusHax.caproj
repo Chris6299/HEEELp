@@ -18,6 +18,7 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects />
     <configurations>
@@ -57,16 +58,29 @@
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="790363954955804" speed="5">
                     <frame duration="1" hotspotX="0.3" hotspotY="0.4" original-source="D:\Construct 2\Sprites\Platformer pack\Extra animations and enemies\Alien sprites\alienGreen_swim1.png">
                         <collision-poly>
-                            <point x="0.33" y="0.37" />
                             <point x="0.5925" y="0.3675" />
-                            <point x="0.6825" y="0.6025" />
-                            <point x="0.63875" y="0.665" />
+                            <point x="0.545" y="0.5425" />
+                            <point x="0.651875" y="0.5725" />
+                            <point x="0.66" y="0.67125" />
+                            <point x="0.53875" y="0.5975" />
+                            <point x="0.51125" y="0.625" />
                             <point x="0.685" y="0.7725" />
                             <point x="0.66" y="0.8625" />
-                            <point x="0.0575" y="0.85" />
-                            <point x="0.28" y="0.68125" />
-                            <point x="0.0875002" y="0.635" />
-                            <point x="0.26375" y="0.4" />
+                            <point x="0.4725" y="0.87" />
+                            <point x="0.468437" y="0.822656" />
+                            <point x="0.543125" y="0.772812" />
+                            <point x="0.41625" y="0.719374" />
+                            <point x="0.253125" y="0.779687" />
+                            <point x="0.2" y="0.859999" />
+                            <point x="0.02625" y="0.87" />
+                            <point x="0.02625" y="0.832501" />
+                            <point x="0.25375" y="0.6775" />
+                            <point x="0.244375" y="0.6" />
+                            <point x="0.132813" y="0.691875" />
+                            <point x="0.11125" y="0.61375" />
+                            <point x="0.27875" y="0.536875" />
+                            <point x="0.2875" y="0.365" />
+                            <point x="0.45875" y="0.3775" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.3" hotspotY="0.4">
@@ -88,6 +102,11 @@
         </object-type>
         <object-type name="Land" sid="5295109483737935">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="5943744962107671">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9774826122806974" speed="0">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\Platformer pack\Tile extension pack\PNG Grass\grassHalf.png">
@@ -195,6 +214,19 @@
         </object-type>
         <object-type name="Text2" sid="7497927600899234">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite" sid="7189637315578694">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="8917051386740607">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1802579028235424" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\construct 2\Sprites\Platformer pack\Building pack\houseGrayAlt2.png" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
