@@ -107,7 +107,7 @@
                 </instance>
                 <instance type="ControlsNames" uid="192">
                     <properties>
-                        <text>W- Unpause Game</text>
+                        <text>While Jumping, hold left or right arrow to use a slide move</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Bauhaus 93,-21,400,0</font>
                         <color>0,0,0</color>
@@ -121,10 +121,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>128</x>
-                        <y>308</y>
+                        <y>307</y>
                         <z>0</z>
-                        <width>200</width>
-                        <height>30</height>
+                        <width>544</width>
+                        <height>32</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>

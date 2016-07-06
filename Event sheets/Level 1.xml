@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Level 1</name>
     <events>
+        <variable constant="0" name="Health" sid="3481133303946324" static="0" type="number">3</variable>
+        <variable constant="0" name="Life" sid="8271611686176319" static="0" type="number">1</variable>
         <event-block sid="9079351748891495">
             <conditions>
                 <condition id="0" name="On key pressed" sid="9140741143482071" type="Keyboard">
@@ -27,13 +29,159 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="80113389611328">
+        <event-block sid="9383908818250372">
             <conditions>
-                <condition id="0" name="On key pressed" sid="1388558130452468" type="Keyboard">
-                    <param id="0" name="Key">81 (Q)</param>
+                <condition behavior="Platform" id="5" name="On jump" sid="5752863919423936" type="BreadBoy" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="6475017628718283" type="BreadBoy">
+                    <param id="0" name="Animation">&quot;Jump&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7779702036360874">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="6223146784347324" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
                 </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="4" name="Set animation" sid="7528475843605697" type="BreadBoy">
+                    <param id="0" name="Animation">&quot;Run&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8649607070472659">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="1461019221015328" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="8410604821367621" type="BreadBoy">
+                    <param id="0" name="Animation">&quot;Run&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="853853707316522">
+            <conditions>
+                <condition id="3" name="On key released" sid="3825687247039832" type="Keyboard">
+                    <param id="0" name="Key">38 (Up arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="2370850858786273" type="BreadBoy">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8677604758664742">
+            <conditions>
+                <condition id="3" name="On key released" sid="554651360982258" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="4000324787090444" type="BreadBoy">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5724116492620331">
+            <conditions>
+                <condition id="3" name="On key released" sid="9548059926051844" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="5055305421226694" type="BreadBoy">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3047744152441177">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="5446107959143101" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="8526573456253239" type="BreadBoy">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1316911823774656">
+            <conditions>
+                <condition id="3" name="On key released" sid="9662433919145718" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="3309780295804251" type="BreadBoy">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7189034679447113">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="4929501473755695" type="BreadBoy">
+                    <param id="0" name="Object">Bird</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="4446796781972979" type="System">
+                    <param id="0" name="Variable">Health</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="3" name="Set progress" sid="8359233473572798" type="ProgressBar">
+                    <param id="0" name="Value">ProgressBar.Progress-1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3471050365671029">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="9267301298964996" type="System">
+                    <param id="0" name="Variable">Health</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="6701482728021872" type="BreadBoy" />
+            </actions>
+        </event-block>
+        <event-block sid="2679550510589642">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="924296041521604" type="BreadBoy">
+                    <param id="0" name="Object">Duck</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="2847254852517926" type="System">
+                    <param id="0" name="Variable">Health</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="3" name="Set progress" sid="2239057709922305" type="ProgressBar">
+                    <param id="0" name="Value">ProgressBar.Progress-1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6796306571121038">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="6109077343648048" type="BreadBoy" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="4436006801231707" type="System">
+                    <param id="0" name="Layout">Game over</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>
