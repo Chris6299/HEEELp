@@ -53,7 +53,7 @@
                 </instance>
                 <instance type="back" uid="122">
                     <properties>
-                        <text>&lt;-- Back</text>
+                        <text>Press F5 to go back</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Bauhaus 93,-29,400,0</font>
                         <color>0,0,0</color>
@@ -69,7 +69,7 @@
                         <x>128</x>
                         <y>384</y>
                         <z>0</z>
-                        <width>128</width>
+                        <width>288</width>
                         <height>64</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>

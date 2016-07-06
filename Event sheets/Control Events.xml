@@ -5,10 +5,8 @@
     <events>
         <event-block sid="5965824373528234">
             <conditions>
-                <condition id="6" name="On object clicked" sid="5329803820271645" type="Mouse">
-                    <param id="0" name="Mouse button">0</param>
-                    <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">back</param>
+                <condition id="0" name="On key pressed" sid="5329803820271645" type="Keyboard">
+                    <param id="0" name="Key">66 (B)</param>
                 </condition>
             </conditions>
             <actions>
