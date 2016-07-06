@@ -4,19 +4,58 @@
     <sid>4080465390830401</sid>
     <event-sheet></event-sheet>
     <size>
-        <width>1708</width>
-        <height>960</height>
+        <width>200000</width>
+        <height>5000</height>
     </size>
     <margins>
         <horizontal>500</horizontal>
         <vertical>500</vertical>
     </margins>
-    <unbounded-scrolling>0</unbounded-scrolling>
+    <unbounded-scrolling>1</unbounded-scrolling>
     <layers>
-        <layer name="Layer 0" sid="76973406013375">
+        <layer name="Background" sid="76973406013375">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="TiledBackground5" uid="193">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>0</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <width>896</width>
+                        <height>512</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="Main" sid="5378971157075349">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
             <parallax>
                 <x>1</x>
                 <y>1</y>
@@ -44,11 +83,38 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>352</x>
+                        <x>224</x>
                         <y>96</y>
                         <z>0</z>
                         <width>486</width>
                         <height>141</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="TheTaleOf" uid="123">
+                    <properties>
+                        <text>The Tale of</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Bauhaus 93,-32,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>352</x>
+                        <y>64</y>
+                        <z>0</z>
+                        <width>192</width>
+                        <height>64</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -83,33 +149,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TheTaleOf" uid="123">
-                    <properties>
-                        <text>The Tale of</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Bauhaus 93,-32,400,0</font>
-                        <color>0,0,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>480</x>
-                        <y>64</y>
-                        <z>0</z>
-                        <width>192</width>
-                        <height>64</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="Text" uid="124">
                     <properties>
                         <text>There was a young boy named Johnny Cakes.  He was a curious boy who liked to play with everything he saw.  One day, Johnny was playing in the kitchen.  He was jumping around on the floor, making everything in the kitchen shake.  Suddenly, Johnny stopped and looked up at the counter.  It was a shiny new toaster.  Johnny reached for the toaster but his arms were too short to get a good grip on it.  He nudged it a few times until it was on the edge of the counter.  Then it happened.  The toaster fells right on Johnny&apos;s head toasting it to a crisp.   </text>
@@ -125,10 +164,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>0</x>
+                        <x>32</x>
                         <y>224</y>
                         <z>0</z>
-                        <width>1088</width>
+                        <width>800</width>
                         <height>320</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -137,11 +176,11 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text2" uid="125">
+                <instance type="Story2" uid="125">
                     <properties>
-                        <text>Since Johnny&apos;s head was now a slice of bread he thought that he could put is new head to good use.  Johnny decided to fight for the rights of bread everyhwere. Thus Breadboy was born.</text>
+                        <text>Since Johnny&apos;s head was now a slice of bread he thought that he could put his new head to good use.  Johnny decided to fight for the rights of bread everyhwere. Thus Breadboy was born.</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Bauhaus 93,-21,400,0</font>
+                        <font>Bauhaus 93,-19,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -152,11 +191,38 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>0</x>
-                        <y>352</y>
+                        <x>32</x>
+                        <y>384</y>
                         <z>0</z>
-                        <width>1088</width>
+                        <width>800</width>
                         <height>192</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="back20" uid="194">
+                    <properties>
+                        <text>&lt;-- Back</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Bauhaus 93,-19,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>672</x>
+                        <y>448</y>
+                        <z>0</z>
+                        <width>200</width>
+                        <height>30</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>

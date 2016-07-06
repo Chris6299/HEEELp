@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>Layout 1</name>
+    <name>Level 1</name>
     <sid>321337262313693</sid>
-    <event-sheet>Event sheet 1</event-sheet>
+    <event-sheet>Level 1</event-sheet>
     <size>
         <width>3600</width>
         <height>100000</height>
@@ -5012,6 +5012,50 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite5" uid="195">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>650</x>
+                        <y>96</y>
+                        <z>0</z>
+                        <width>148.5</width>
+                        <height>152.100006104</height>
+                        <depth>0</depth>
+                        <hotspotX>0.49333334</hotspotX>
+                        <hotspotY>0.49333334</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite6" uid="196">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>818</x>
+                        <y>355</y>
+                        <z>0</z>
+                        <width>164.100006104</width>
+                        <height>214.5</height>
+                        <depth>0</depth>
+                        <hotspotX>0.479999989</hotspotX>
+                        <hotspotY>0.479999989</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

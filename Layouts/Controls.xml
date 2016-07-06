@@ -78,6 +78,60 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="ControlsNames" uid="190">
+                    <properties>
+                        <text>Q- Pause Game</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Bauhaus 93,-21,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>128</x>
+                        <y>266</y>
+                        <z>0</z>
+                        <width>200</width>
+                        <height>30</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="ControlsNames" uid="192">
+                    <properties>
+                        <text>W- Unpause Game</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Bauhaus 93,-21,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>128</x>
+                        <y>308</y>
+                        <z>0</z>
+                        <width>200</width>
+                        <height>30</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -207,7 +261,7 @@
                 </instance>
                 <instance type="ControlsNames" uid="119">
                     <properties>
-                        <text>Z- Shoot</text>
+                        <text>Z- Throw Bread</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Bauhaus 93,-21,400,0</font>
                         <color>0,0,0</color>
