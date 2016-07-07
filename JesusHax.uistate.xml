@@ -20,8 +20,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <event-sheet order="3">Main Screen Events</event-sheet>
         <event-sheet order="5">Control Events</event-sheet>
         <event-sheet order="7">Story</event-sheet>
-        <event-sheet order="9">Level 2</event-sheet>
-        <event-sheet order="11">game over</event-sheet>
+        <event-sheet order="9">game over</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -32,7 +31,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <families-expanded root="1" />
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
-        <folder expanded="0" path="layout-folder/" />
+        <folder expanded="1" path="layout-folder/" />
         <folder expanded="0" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
         <folder expanded="0" path="sound-folder/" />
