@@ -11,17 +11,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">Level 1</layout>
-        <layout order="2">Main Screen</layout>
-        <layout order="4">Controls</layout>
-        <layout order="6">Story</layout>
-        <layout order="9">Game over</layout>
-        <layout order="10">Kitchen</layout>
+        <layout order="2">Kitchen</layout>
         <event-sheet order="1">Level 1</event-sheet>
-        <event-sheet order="3">Main Screen Events</event-sheet>
-        <event-sheet order="5">Control Events</event-sheet>
-        <event-sheet order="7">Story</event-sheet>
-        <event-sheet order="8">game over</event-sheet>
-        <event-sheet active="1" order="11">kitchen</event-sheet>
+        <event-sheet active="1" order="3">Event sheet 4</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -51,5 +43,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Table/" />
         <folder expanded="1" path="animation-folder/Cereal/" />
         <folder expanded="1" path="animation-folder/Sprite6/" />
+        <folder expanded="1" path="animation-folder/Mold/" />
+        <folder expanded="1" path="animation-folder/rollingPin/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
     </folders-expanded>
 </c2uistate>

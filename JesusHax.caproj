@@ -22,6 +22,7 @@
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects />
@@ -604,18 +605,92 @@
                 <behavior-type name="Solid" sid="5887056294708272">
                     <behavior id="solid" />
                 </behavior-type>
+                <behavior-type name="Jumpthru" sid="5923011773088024">
+                    <behavior id="jumpthru" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5289213430185271" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\Platformer pack\Building pack\doorLock.png">
+                    <frame duration="1" hotspotX="0.123333" hotspotY="0.14" original-source="D:\Construct 2\Sprites\Platformer pack\Building pack\doorLock.png">
                         <collision-poly>
-                            <point x="0.0533333" y="0.0333333" />
-                            <point x="0.95" y="0.0333333" />
+                            <point x="0.0533333" y="0.0233333" />
+                            <point x="0.956667" y="0.0266666" />
                             <point x="0.95" y="1" />
                             <point x="0" y="1" />
                             <point x="0" y="0.0633335" />
                         </collision-poly>
                     </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mold" sid="6776954395125095">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="5532224237960559">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="7760114868132994">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4607857111465384" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.228" y="0.4165" />
+                            <point x="0.373" y="0.3965" />
+                            <point x="0.4435" y="0.412" />
+                            <point x="0.46725" y="0.511501" />
+                            <point x="0.4445" y="0.532" />
+                            <point x="0.40875" y="0.508" />
+                            <point x="0.394875" y="0.5325" />
+                            <point x="0.278937" y="0.50975" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="rollingPin" sid="7129073127306801">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="3547183446963585">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="5535778136826877">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6321554939930892" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.383" y="0.248" />
+                            <point x="0.388" y="0.22425" />
+                            <point x="0.406" y="0.2215" />
+                            <point x="0.43275" y="0.25975" />
+                            <point x="0.4375" y="0.45" />
+                            <point x="0.46525" y="0.4965" />
+                            <point x="0.419" y="0.479" />
+                            <point x="0.38025" y="0.482" />
+                            <point x="0.3225" y="0.498" />
+                            <point x="0.355875" y="0.44875" />
+                            <point x="0.35325" y="0.2505" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="1980719787463676">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="9541487304412796">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3052917649154399" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\construct 2\Sprites\Platformer pack\Building pack\roofGreyTopMid.png" />
                 </animation>
             </animation-folder>
         </object-type>
