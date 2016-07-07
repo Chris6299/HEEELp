@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Level 1</name>
     <events>
+        <variable constant="0" name="Score" sid="1523104272764135" static="0" type="number">0</variable>
         <variable constant="0" name="Health" sid="3481133303946324" static="0" type="number">3</variable>
         <variable constant="0" name="Life" sid="8271611686176319" static="0" type="number">1</variable>
         <event-block sid="9079351748891495">
@@ -180,6 +181,133 @@
             <actions>
                 <action id="-2" name="Go to layout" sid="4436006801231707" type="System">
                     <param id="0" name="Layout">Game over</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2188929020468613">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="9459146316384173" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="819228877969897" type="Bird">
+                    <param id="0" name="Angle">180</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="8163580091769504" type="Duck">
+                    <param id="0" name="Angle">180</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3530740832816661">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="198632818903289" type="System">
+                    <param id="0" name="Interval (seconds)">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="6274412769165551" type="System">
+                    <param id="0" name="Object to create">Bird</param>
+                    <param id="1" name="Layer">&quot;Main&quot;</param>
+                    <param id="2" name="X">random(999)</param>
+                    <param id="3" name="Y">random(415)</param>
+                </action>
+                <action id="-3" name="Create object" sid="9817591939049622" type="System">
+                    <param id="0" name="Object to create">Duck</param>
+                    <param id="1" name="Layer">&quot;Main&quot;</param>
+                    <param id="2" name="X">819</param>
+                    <param id="3" name="Y">368.391</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6890057177714822">
+            <conditions>
+                <condition id="-18" name="On created" sid="5938639349543696" type="Bird" />
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="8316936726943229" type="Bird">
+                    <param id="0" name="Angle">180</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2092764950736011">
+            <conditions>
+                <condition id="-18" name="On created" sid="3015134104193602" type="Duck" />
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="5435039869718581" type="Duck">
+                    <param id="0" name="Angle">180</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3193712580009082">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="4393044265976802" type="System">
+                    <param id="0" name="Interval (seconds)">15</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="1211590135895983">
+            <conditions>
+                <condition id="3" name="On key released" sid="3958253894376023" type="Keyboard">
+                    <param id="0" name="Key">90 (Z)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="3666204949882204" type="System">
+                    <param id="0" name="Object to create">breadshot</param>
+                    <param id="1" name="Layer">&quot;Main&quot;</param>
+                    <param id="2" name="X">BreadBoy.X+BreadBoy.Width</param>
+                    <param id="3" name="Y">BreadBoy.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="778426377375472">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="3629729902541301" type="breadshot">
+                    <param id="0" name="Object">Bird</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="5776047718807186" type="Bird" />
+                <action id="-9" name="Destroy" sid="3316407595858613" type="breadshot" />
+            </actions>
+        </event-block>
+        <event-block sid="2200436622568328">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5240825186635414" type="breadshot">
+                    <param id="0" name="Object">Duck</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="3815171471898973" type="Duck" />
+                <action id="-9" name="Destroy" sid="1056955950229866" type="breadshot" />
+            </actions>
+        </event-block>
+        <event-block sid="5160035924598332">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="813029069929071" type="Bird" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="4019085487252872" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+                <action id="0" name="Set text" sid="419686830350226" type="Score">
+                    <param id="0" name="Text">&quot;Score: &quot;&amp;Score</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6198064637196515">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="6636968083675723" type="Duck" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="5331470984186884" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+                <action id="0" name="Set text" sid="4897052197534795" type="Score">
+                    <param id="0" name="Text">&quot;Score: &quot;&amp;Score</param>
                 </action>
             </actions>
         </event-block>

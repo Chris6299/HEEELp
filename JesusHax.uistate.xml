@@ -14,7 +14,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="2">Main Screen</layout>
         <layout order="4">Controls</layout>
         <layout order="6">Story</layout>
-        <layout active="1" order="8">Level 2</layout>
+        <layout order="8">Level 2</layout>
         <layout order="10">Game over</layout>
         <event-sheet order="1">Level 1</event-sheet>
         <event-sheet order="3">Main Screen Events</event-sheet>
@@ -32,8 +32,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <families-expanded root="1" />
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
-        <folder expanded="1" path="layout-folder/" />
-        <folder expanded="1" path="event-folder/" />
+        <folder expanded="0" path="layout-folder/" />
+        <folder expanded="0" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
         <folder expanded="0" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
@@ -51,5 +51,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite7/" />
         <folder expanded="1" path="animation-folder/Sprite8/" />
         <folder expanded="1" path="animation-folder/Sprite5/" />
+        <folder expanded="1" path="animation-folder/Sprite6/" />
+        <folder expanded="1" path="animation-folder/Sprite9/" />
+        <folder expanded="1" path="animation-folder/breadshot/" />
     </folders-expanded>
 </c2uistate>
