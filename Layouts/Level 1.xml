@@ -89,7 +89,7 @@
                                 <acceleration>0</acceleration>
                                 <gravity>0</gravity>
                                 <bounce-off-solids>No</bounce-off-solids>
-                                <set-angle>Yes</set-angle>
+                                <set-angle>No</set-angle>
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
@@ -105,7 +105,7 @@
                         <depth>0</depth>
                         <hotspotX>0.50666666</hotspotX>
                         <hotspotY>0.50666666</hotspotY>
-                        <angle>0</angle>
+                        <angle>-3.130374908</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
@@ -122,7 +122,7 @@
                                 <max-speed>330</max-speed>
                                 <acceleration>1500</acceleration>
                                 <deceleration>1500</deceleration>
-                                <jump-strength>700</jump-strength>
+                                <jump-strength>500</jump-strength>
                                 <gravity>1500</gravity>
                                 <max-fall-speed>1000</max-fall-speed>
                                 <double-jump>Enabled</double-jump>
@@ -3446,11 +3446,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>187.129089355</x>
-                        <y>534.628356934</y>
+                        <x>934.942138672</x>
+                        <y>400.508270264</y>
                         <z>0</z>
-                        <width>250</width>
-                        <height>250</height>
+                        <width>150</width>
+                        <height>150</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
