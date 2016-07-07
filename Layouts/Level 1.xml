@@ -136,6 +136,11 @@
                                 <bound-by>Edge</bound-by>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="ScrollTo">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -143,11 +148,11 @@
                         <x>51.930084229</x>
                         <y>349.592529297</y>
                         <z>0</z>
-                        <width>80</width>
-                        <height>91</height>
+                        <width>54.400001526</width>
+                        <height>50.049999237</height>
                         <depth>0</depth>
-                        <hotspotX>0.49000001</hotspotX>
-                        <hotspotY>0.670000017</hotspotY>
+                        <hotspotX>0.588235319</hotspotX>
+                        <hotspotY>0.381818175</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -3446,14 +3451,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>934.942138672</x>
-                        <y>400.508270264</y>
+                        <x>929.063415527</x>
+                        <y>403.775177002</y>
                         <z>0</z>
-                        <width>150</width>
-                        <height>150</height>
+                        <width>11.368286133</width>
+                        <height>10.369689941</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.538461566</hotspotX>
+                        <hotspotY>0.639999986</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

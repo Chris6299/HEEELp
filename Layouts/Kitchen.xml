@@ -2,7 +2,7 @@
 <c2layout>
     <name>Kitchen</name>
     <sid>286939076468945</sid>
-    <event-sheet>Event sheet 4</event-sheet>
+    <event-sheet>Event sheet 6</event-sheet>
     <size>
         <width>1708</width>
         <height>960</height>
@@ -516,6 +516,11 @@
                                 <bound-by>Edge</bound-by>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="ScrollTo">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -523,11 +528,11 @@
                         <x>60</x>
                         <y>113</y>
                         <z>0</z>
-                        <width>80</width>
-                        <height>91</height>
+                        <width>54.400001526</width>
+                        <height>50.049999237</height>
                         <depth>0</depth>
-                        <hotspotX>0.49000001</hotspotX>
-                        <hotspotY>0.670000017</hotspotY>
+                        <hotspotX>0.588235319</hotspotX>
+                        <hotspotY>0.381818175</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -620,11 +625,11 @@
                         <x>402</x>
                         <y>556</y>
                         <z>0</z>
-                        <width>150</width>
-                        <height>150</height>
+                        <width>26</width>
+                        <height>25</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.538461566</hotspotX>
+                        <hotspotY>0.639999986</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

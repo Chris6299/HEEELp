@@ -215,7 +215,7 @@
         <event-block sid="4372177527507598">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="6746494769150113" type="System">
-                    <param id="0" name="Interval (seconds)">5</param>
+                    <param id="0" name="Interval (seconds)">3</param>
                 </condition>
             </conditions>
             <actions>
@@ -294,7 +294,7 @@
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="7615820420020024" type="System">
-                    <param id="0" name="Layout">Controls</param>
+                    <param id="0" name="Layout">fRIDGE</param>
                 </action>
             </actions>
         </event-block>
@@ -308,44 +308,5 @@
                 </action>
             </actions>
         </event-block>
-        <event-group description="" sid="6617018953500625" title="Shots">
-            <sub-events>
-                <event-block sid="622852721926109">
-                    <conditions>
-                        <condition id="3" name="On key released" sid="685993618407616" type="Keyboard">
-                            <param id="0" name="Key">90 (Z)</param>
-                        </condition>
-                        <condition id="7" inverted="1" name="Is mirrored" sid="2013285933882281" type="BreadBoy" />
-                    </conditions>
-                    <actions>
-                        <action id="-3" name="Create object" sid="5717091892126469" type="System">
-                            <param id="0" name="Object to create">breadshot</param>
-                            <param id="1" name="Layer">&quot;Main&quot;</param>
-                            <param id="2" name="X">BreadBoy.X+BreadBoy.Width</param>
-                            <param id="3" name="Y">BreadBoy.Y</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="4844451935700866">
-                    <conditions>
-                        <condition id="3" name="On key released" sid="5820945556990888" type="Keyboard">
-                            <param id="0" name="Key">90 (Z)</param>
-                        </condition>
-                        <condition id="7" name="Is mirrored" sid="2339949268361889" type="BreadBoy" />
-                    </conditions>
-                    <actions>
-                        <action id="-3" name="Create object" sid="9792848519623172" type="System">
-                            <param id="0" name="Object to create">breadshot</param>
-                            <param id="1" name="Layer">1</param>
-                            <param id="2" name="X">BreadBoy.X+BreadBoy.Width</param>
-                            <param id="3" name="Y">Breadboy.Y</param>
-                        </action>
-                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="6911824755870758" type="breadshot">
-                            <param id="0" name="Angle">180</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
     </events>
 </c2eventsheet>
