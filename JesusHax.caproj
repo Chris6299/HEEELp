@@ -593,7 +593,6 @@
         <layout>Main Screen.xml</layout>
         <layout>Controls.xml</layout>
         <layout>Story.xml</layout>
-        <layout>Level 2.xml</layout>
         <layout>Game over.xml</layout>
     </layout-folder>
     <event-folder>
