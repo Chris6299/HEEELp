@@ -370,32 +370,32 @@
                     </frame>
                     <frame duration="1" hotspotX="0.506667" hotspotY="0.506667">
                         <collision-poly>
-                            <point x="0.4625" y="0.412502" />
-                            <point x="0.409167" y="0.4725" />
-                            <point x="0.339167" y="0.405834" />
-                            <point x="0.215834" y="0.430834" />
-                            <point x="0.234167" y="0.325417" />
-                            <point x="0.140834" y="0.235834" />
-                            <point x="0.195833" y="0.170834" />
-                            <point x="0.314375" y="0.268334" />
-                            <point x="0.369583" y="0.156668" />
-                            <point x="0.4725" y="0.243335" />
-                            <point x="0.390417" y="0.331251" />
+                            <point x="0.6325" y="0.555835" />
+                            <point x="0.584167" y="0.599167" />
+                            <point x="0.510834" y="0.530834" />
+                            <point x="0.410834" y="0.570834" />
+                            <point x="0.449167" y="0.477084" />
+                            <point x="0.374167" y="0.402501" />
+                            <point x="0.434166" y="0.342501" />
+                            <point x="0.514375" y="0.398334" />
+                            <point x="0.57625" y="0.326668" />
+                            <point x="0.6475" y="0.396668" />
+                            <point x="0.56375" y="0.492918" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.506667" hotspotY="0.506667">
                         <collision-poly>
-                            <point x="0.4625" y="0.412502" />
-                            <point x="0.409167" y="0.4725" />
-                            <point x="0.339167" y="0.405834" />
-                            <point x="0.215834" y="0.430834" />
-                            <point x="0.234167" y="0.325417" />
-                            <point x="0.140834" y="0.235834" />
-                            <point x="0.195833" y="0.170834" />
-                            <point x="0.314375" y="0.268334" />
-                            <point x="0.369583" y="0.156668" />
-                            <point x="0.4725" y="0.243335" />
-                            <point x="0.390417" y="0.331251" />
+                            <point x="0.659167" y="0.534169" />
+                            <point x="0.6025" y="0.5775" />
+                            <point x="0.539167" y="0.512501" />
+                            <point x="0.432501" y="0.552501" />
+                            <point x="0.479167" y="0.452084" />
+                            <point x="0.405834" y="0.394167" />
+                            <point x="0.464166" y="0.322501" />
+                            <point x="0.516042" y="0.393334" />
+                            <point x="0.592916" y="0.300001" />
+                            <point x="0.689166" y="0.373335" />
+                            <point x="0.59875" y="0.477918" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -509,45 +509,6 @@
         <object-type name="Score" sid="9987902243759542">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Cereal" sid="8078045591112133">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5339640797245804" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <collision-poly>
-                            <point x="0.088" y="0.03" />
-                            <point x="0.804" y="0.03" />
-                            <point x="0.804" y="0.99" />
-                            <point x="0.0629999" y="0.988" />
-                            <point x="0.068" y="0.0515004" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="2ndBack" sid="5993131063208671">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="908108276605334" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Table" sid="4724182688567619">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="804703378780413" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <collision-poly>
-                            <point x="0" y="0.76" />
-                            <point x="1" y="0.76" />
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Fridge" sid="1370673359507887">
             <plugin id="Sprite" />
             <animation-folder>
@@ -566,6 +527,11 @@
         </object-type>
         <object-type name="Orangi" sid="6473761437574752">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="7597318322629151">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="852059809496753" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
@@ -583,6 +549,76 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Kitchen" sid="3254710954685081">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3321773669842638" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Table" sid="4770680842746138">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="5161527696938108">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8344788350575513" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0" y="0.76" />
+                            <point x="1" y="0.76" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Cereal" sid="5581418338722007">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="1170710957552182">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9269410635824947" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.084" y="0.032" />
+                            <point x="0.796" y="0.032" />
+                            <point x="0.8" y="0.976" />
+                            <point x="0.054" y="0.984" />
+                            <point x="0.066" y="0.054" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="8536928889112962">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="5887056294708272">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5289213430185271" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\Platformer pack\Building pack\doorLock.png">
+                        <collision-poly>
+                            <point x="0.0533333" y="0.0333333" />
+                            <point x="0.95" y="0.0333333" />
+                            <point x="0.95" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.0633335" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -591,6 +627,7 @@
         <layout>Controls.xml</layout>
         <layout>Story.xml</layout>
         <layout>Game over.xml</layout>
+        <layout>Kitchen.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Level 1.xml</event-sheet>
@@ -603,6 +640,9 @@
         <event-sheet>Level 2.xml</event-sheet>
         <event-sheet>Event sheet 1.xml</event-sheet>
         <event-sheet>game over.xml</event-sheet>
+        <event-sheet>Event sheet 4.xml</event-sheet>
+        <event-sheet>kitchem.xml</event-sheet>
+        <event-sheet>kitchen.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="108">
