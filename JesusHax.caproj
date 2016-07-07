@@ -312,19 +312,6 @@
         <object-type name="Story2" sid="7497927600899234">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Sprite" sid="7189637315578694">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="8917051386740607">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1802579028235424" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\construct 2\Sprites\Platformer pack\Building pack\houseGrayAlt2.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Sprite2" sid="4188353242828213">
             <plugin id="Sprite" />
             <animation-folder>
@@ -486,22 +473,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite7" sid="2803528649905835">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3972332963639301" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite8" sid="3692907271043945">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1114226655316157" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Text2" sid="4079471100946097">
             <plugin id="Text" />
         </object-type>
@@ -539,22 +510,6 @@
         <object-type name="Text7" sid="5514194062171327">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Sprite6" sid="5818712700041263">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5381525669791119" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite9" sid="7876947342744287">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5992639398318017" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="breadshot" sid="4085485488540472">
             <plugin id="Sprite" />
             <behaviors>
@@ -585,6 +540,80 @@
         </object-type>
         <object-type name="Score" sid="9987902243759542">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite10" sid="8078045591112133">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5339640797245804" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.088" y="0.03" />
+                            <point x="0.804" y="0.03" />
+                            <point x="0.804" y="0.99" />
+                            <point x="0.0629999" y="0.988" />
+                            <point x="0.068" y="0.0515004" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite7" sid="5993131063208671">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="908108276605334" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite9" sid="4724182688567619">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="804703378780413" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0" y="0.76" />
+                            <point x="1" y="0.76" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="1370673359507887">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="810494731311684" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct 2\Sprites\Platformer pack\Building pack\doorLock.png">
+                        <collision-poly>
+                            <point x="0.0533333" y="0.0333333" />
+                            <point x="0.95" y="0.0333333" />
+                            <point x="0.95" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.0633335" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite8" sid="6473761437574752">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="852059809496753" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.256" y="0.256" />
+                            <point x="0.5" y="0.16" />
+                            <point x="0.744" y="0.256" />
+                            <point x="0.844" y="0.5" />
+                            <point x="0.748" y="0.748" />
+                            <point x="0.5" y="0.852" />
+                            <point x="0.248" y="0.752" />
+                            <point x="0.152" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />

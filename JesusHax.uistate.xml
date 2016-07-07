@@ -14,8 +14,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="2">Main Screen</layout>
         <layout order="4">Controls</layout>
         <layout order="6">Story</layout>
-        <layout order="8">Game over</layout>
-        <event-sheet active="1" order="1">Level 1</event-sheet>
+        <layout active="1" order="8">Level 2</layout>
+        <layout order="10">Game over</layout>
+        <event-sheet order="1">Level 1</event-sheet>
         <event-sheet order="3">Main Screen Events</event-sheet>
         <event-sheet order="5">Control Events</event-sheet>
         <event-sheet order="7">Story</event-sheet>
@@ -40,17 +41,17 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Land/" />
         <folder expanded="1" path="animation-folder/ZenGarden/" />
         <folder expanded="1" path="animation-folder/ControlsBackground/" />
-        <folder expanded="1" path="animation-folder/Sprite/" />
         <folder expanded="1" path="animation-folder/Sprite2/" />
         <folder expanded="1" path="animation-folder/Sprite3/" />
         <folder expanded="1" path="animation-folder/Sprite4/" />
         <folder expanded="1" path="animation-folder/Bird/" />
         <folder expanded="1" path="animation-folder/Duck/" />
-        <folder expanded="1" path="animation-folder/Sprite7/" />
-        <folder expanded="1" path="animation-folder/Sprite8/" />
         <folder expanded="1" path="animation-folder/Sprite5/" />
-        <folder expanded="1" path="animation-folder/Sprite6/" />
-        <folder expanded="1" path="animation-folder/Sprite9/" />
         <folder expanded="1" path="animation-folder/breadshot/" />
+        <folder expanded="1" path="animation-folder/Sprite10/" />
+        <folder expanded="1" path="animation-folder/Sprite7/" />
+        <folder expanded="1" path="animation-folder/Sprite9/" />
+        <folder expanded="1" path="animation-folder/Sprite6/" />
+        <folder expanded="1" path="animation-folder/Sprite8/" />
     </folders-expanded>
 </c2uistate>
