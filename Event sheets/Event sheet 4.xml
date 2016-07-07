@@ -207,14 +207,23 @@
                 <action id="-3" name="Create object" sid="7769195959510874" type="System">
                     <param id="0" name="Object to create">Mold</param>
                     <param id="1" name="Layer">&quot;Main&quot;</param>
-                    <param id="2" name="X">random(999)</param>
-                    <param id="3" name="Y">random(415)</param>
+                    <param id="2" name="X">900</param>
+                    <param id="3" name="Y">random(68,460)</param>
                 </action>
+            </actions>
+        </event-block>
+        <event-block sid="4372177527507598">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="6746494769150113" type="System">
+                    <param id="0" name="Interval (seconds)">5</param>
+                </condition>
+            </conditions>
+            <actions>
                 <action id="-3" name="Create object" sid="2601272279644556" type="System">
                     <param id="0" name="Object to create">rollingPin</param>
                     <param id="1" name="Layer">&quot;Main&quot;</param>
-                    <param id="2" name="X">random(999)</param>
-                    <param id="3" name="Y">random(999)</param>
+                    <param id="2" name="X">900</param>
+                    <param id="3" name="Y">random(68,460)</param>
                 </action>
             </actions>
         </event-block>
@@ -235,21 +244,6 @@
             <actions>
                 <action behavior="Bullet" id="3" name="Set angle of motion" sid="7462490101800782" type="Duck">
                     <param id="0" name="Angle">180</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="622852721926109">
-            <conditions>
-                <condition id="3" name="On key released" sid="685993618407616" type="Keyboard">
-                    <param id="0" name="Key">90 (Z)</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-3" name="Create object" sid="5717091892126469" type="System">
-                    <param id="0" name="Object to create">breadshot</param>
-                    <param id="1" name="Layer">&quot;Main&quot;</param>
-                    <param id="2" name="X">BreadBoy.X+BreadBoy.Width</param>
-                    <param id="3" name="Y">BreadBoy.Y</param>
                 </action>
             </actions>
         </event-block>
@@ -275,9 +269,10 @@
                 <action id="-9" name="Destroy" sid="9414217410577698" type="breadshot" />
             </actions>
         </event-block>
-        <event-block sid="7597726159145431">
+        <event-block any="1" sid="7597726159145431">
             <conditions>
                 <condition id="-19" name="On destroyed" sid="5648670831853038" type="Mold" />
+                <condition id="-19" name="On destroyed" sid="5315380234629695" type="rollingPin" />
             </conditions>
             <actions>
                 <action id="-10" name="Add to" sid="5373556090659517" type="System">
@@ -285,20 +280,6 @@
                     <param id="1" name="Value">10</param>
                 </action>
                 <action id="0" name="Set text" sid="5915551045604106" type="Score">
-                    <param id="0" name="Text">&quot;Score: &quot;&amp;Score</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="5558338412196554">
-            <conditions>
-                <condition id="-19" name="On destroyed" sid="8149530834659841" type="rollingPin" />
-            </conditions>
-            <actions>
-                <action id="-10" name="Add to" sid="1612191521035249" type="System">
-                    <param id="0" name="Variable">Score</param>
-                    <param id="1" name="Value">10</param>
-                </action>
-                <action id="0" name="Set text" sid="8906833466221032" type="Score">
                     <param id="0" name="Text">&quot;Score: &quot;&amp;Score</param>
                 </action>
             </actions>
@@ -327,5 +308,44 @@
                 </action>
             </actions>
         </event-block>
+        <event-group description="" sid="6617018953500625" title="Shots">
+            <sub-events>
+                <event-block sid="622852721926109">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="685993618407616" type="Keyboard">
+                            <param id="0" name="Key">90 (Z)</param>
+                        </condition>
+                        <condition id="7" inverted="1" name="Is mirrored" sid="2013285933882281" type="BreadBoy" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="5717091892126469" type="System">
+                            <param id="0" name="Object to create">breadshot</param>
+                            <param id="1" name="Layer">&quot;Main&quot;</param>
+                            <param id="2" name="X">BreadBoy.X+BreadBoy.Width</param>
+                            <param id="3" name="Y">BreadBoy.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4844451935700866">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="5820945556990888" type="Keyboard">
+                            <param id="0" name="Key">90 (Z)</param>
+                        </condition>
+                        <condition id="7" name="Is mirrored" sid="2339949268361889" type="BreadBoy" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="9792848519623172" type="System">
+                            <param id="0" name="Object to create">breadshot</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">BreadBoy.X+BreadBoy.Width</param>
+                            <param id="3" name="Y">Breadboy.Y</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="6911824755870758" type="breadshot">
+                            <param id="0" name="Angle">180</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

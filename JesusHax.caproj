@@ -493,15 +493,14 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5856759666130503" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
-                            <point x="0.3095" y="0.4625" />
-                            <point x="0.322125" y="0.46075" />
-                            <point x="0.33425" y="0.47" />
-                            <point x="0.3435" y="0.46125" />
-                            <point x="0.3515" y="0.46125" />
-                            <point x="0.36275" y="0.465875" />
-                            <point x="0.36275" y="0.514" />
-                            <point x="0.3045" y="0.513" />
-                            <point x="0.30325" y="0.46925" />
+                            <point x="0.5575" y="0.423333" />
+                            <point x="0.559167" y="0.534167" />
+                            <point x="0.551667" y="0.545" />
+                            <point x="0.43" y="0.544167" />
+                            <point x="0.42" y="0.530833" />
+                            <point x="0.419167" y="0.425" />
+                            <point x="0.435" y="0.4075" />
+                            <point x="0.550833" y="0.4075" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -661,7 +660,7 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6321554939930892" speed="5">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6321554939930892" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
                             <point x="0.383" y="0.248" />
@@ -677,7 +676,6 @@
                             <point x="0.35325" y="0.2505" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>

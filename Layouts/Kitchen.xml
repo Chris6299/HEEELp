@@ -617,11 +617,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>506</x>
-                        <y>571</y>
+                        <x>402</x>
+                        <y>556</y>
                         <z>0</z>
-                        <width>250</width>
-                        <height>250</height>
+                        <width>150</width>
+                        <height>150</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
