@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Credits</name>
+    <events>
+        <event-block sid="1029299150752764">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="9586483408112952" type="System" />
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="8795993539788864">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="9223710815738304" type="System" />
+            </conditions>
+            <actions />
+        </event-block>
+    </events>
+</c2eventsheet>

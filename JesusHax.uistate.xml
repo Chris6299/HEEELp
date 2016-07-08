@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2uistate>
     <!--This is a UI state file - its content describes the user interface settings when the project was last open.
 It is entirely optional and the project will load without it.  If you are placing the project under source control,
@@ -11,9 +11,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">Level 1</layout>
-        <layout active="1" order="2">Kitchen</layout>
+        <layout order="2">Kitchen</layout>
+        <layout active="1" order="4">fRIDGE</layout>
+        <layout order="6">Credits</layout>
         <event-sheet order="1">Level 1</event-sheet>
-        <event-sheet order="3">Event sheet 4</event-sheet>
+        <event-sheet order="3">Event sheet 6</event-sheet>
+        <event-sheet order="5">Fridge</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -46,5 +49,15 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Mold/" />
         <folder expanded="1" path="animation-folder/rollingPin/" />
         <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/Freezer/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/InvisibleWall/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/buttwer/" />
+        <folder expanded="1" path="animation-folder/Chicken/" />
+        <folder expanded="1" path="animation-folder/Sprite4/" />
+        <folder expanded="1" path="animation-folder/Sprite5/" />
+        <folder expanded="1" path="animation-folder/Sprite7/" />
+        <folder expanded="1" path="animation-folder/Sprite8/" />
     </folders-expanded>
 </c2uistate>
