@@ -51,7 +51,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text10" uid="173">
+                <instance type="Text10" uid="108">
                     <properties>
                         <text>CONGRATULATIONS!</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -78,7 +78,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text11" uid="174">
+                <instance type="Text11" uid="109">
                     <properties>
                         <text>You have beaten the Terror Toaster and resored the rights of bread everwhere! </text>
                         <initial-visibility>Visible</initial-visibility>

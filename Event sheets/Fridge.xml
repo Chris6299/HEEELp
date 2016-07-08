@@ -227,29 +227,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="1434207241823695">
-            <conditions>
-                <condition id="-18" name="On created" sid="4157650789738757" type="buttwer" />
-            </conditions>
-            <actions>
-                <action behavior="Bullet" id="3" name="Set angle of motion" sid="8336342809661849" type="buttwer">
-                    <param id="0" name="Angle">180</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="1788293234809137">
-            <conditions>
-                <condition id="-13" name="Is between angles" sid="8800807567515432" type="Chicken">
-                    <param id="0" name="First angle">0</param>
-                    <param id="1" name="Second angle">45</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Bullet" id="3" name="Set angle of motion" sid="8029072358451329" type="Chicken">
-                    <param id="0" name="Angle">180</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="8653954224529294">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="381110111327935" type="breadshot">
@@ -345,59 +322,62 @@
                 <event-block sid="3530740832816661">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="198632818903289" type="System">
-                            <param id="0" name="Interval (seconds)">random(2,5)</param>
+                            <param id="0" name="Interval (seconds)">random(2,3)</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="-3" name="Create object" sid="6274412769165551" type="System">
-                            <param id="0" name="Object to create">Bird</param>
+                            <param id="0" name="Object to create">buttwer</param>
                             <param id="1" name="Layer">&quot;Main&quot;</param>
                             <param id="2" name="X">1010</param>
                             <param id="3" name="Y">random(75,750)</param>
                         </action>
                         <action id="-3" name="Create object" sid="9817591939049622" type="System">
-                            <param id="0" name="Object to create">Duck</param>
+                            <param id="0" name="Object to create">Chicken</param>
                             <param id="1" name="Layer">&quot;Main&quot;</param>
                             <param id="2" name="X">1010</param>
                             <param id="3" name="Y">random(75,750)</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="8336342809661849" type="buttwer">
+                            <param id="0" name="Angle">180</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="8029072358451329" type="Chicken">
+                            <param id="0" name="Angle">180</param>
                         </action>
                     </actions>
                 </event-block>
                 <event-block sid="5569892866443105">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="780773096151012" type="System">
-                            <param id="0" name="Interval (seconds)">random(2,5)</param>
+                            <param id="0" name="Interval (seconds)">random(2,3)</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="-3" name="Create object" sid="2297954865786915" type="System">
-                            <param id="0" name="Object to create">Bird</param>
+                            <param id="0" name="Object to create">buttwer</param>
                             <param id="1" name="Layer">&quot;Main&quot;</param>
                             <param id="2" name="X">0</param>
-                            <param id="3" name="Y">random(68,300)</param>
+                            <param id="3" name="Y">random(75,675)</param>
                         </action>
                         <action id="-3" name="Create object" sid="3569469655253715" type="System">
-                            <param id="0" name="Object to create">Duck</param>
+                            <param id="0" name="Object to create">Chicken</param>
                             <param id="1" name="Layer">&quot;Main&quot;</param>
                             <param id="2" name="X">0</param>
-                            <param id="3" name="Y">368.391</param>
+                            <param id="3" name="Y">random(75,675)</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="4609653232382253" type="buttwer">
+                            <param id="0" name="Angle">0</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="5263664757192175" type="Chicken">
+                            <param id="0" name="Angle">0</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="4776249274109526" type="buttwer">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="305589493084704" type="Chicken">
+                            <param id="0" name="State">0</param>
                         </action>
                     </actions>
-                    <sub-events>
-                        <event-block sid="2188929020468613">
-                            <conditions>
-                                <condition id="-3" name="On end of layout" sid="9459146316384173" type="System" />
-                            </conditions>
-                            <actions>
-                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="819228877969897" type="Bird">
-                                    <param id="0" name="Angle">180</param>
-                                </action>
-                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="8163580091769504" type="Duck">
-                                    <param id="0" name="Angle">180</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>

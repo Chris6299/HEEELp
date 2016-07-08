@@ -6,146 +6,183 @@
         <variable constant="0" name="Score5" sid="9606122559030776" static="0" type="number">0</variable>
         <variable constant="0" name="Health5" sid="5195525647506626" static="0" type="number">3</variable>
         <variable constant="0" name="Life5" sid="8888490076478748" static="0" type="number">1</variable>
-        <event-block sid="9424007892262654">
-            <conditions>
-                <condition id="0" name="On key pressed" sid="2762889743041626" type="Keyboard">
-                    <param id="0" name="Key">81 (Q)</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-13" name="Set time scale" sid="9971949888632991" type="System">
-                    <param id="0" name="Time scale">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="4444124113430073">
-            <conditions>
-                <condition id="0" name="On key pressed" sid="7275986673787529" type="Keyboard">
-                    <param id="0" name="Key">87 (W)</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-13" name="Set time scale" sid="339185454253553" type="System">
-                    <param id="0" name="Time scale">1.0</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="944304924379004">
-            <conditions>
-                <condition behavior="Platform" id="5" name="On jump" sid="9725953551709513" type="BreadBoy" />
-            </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="7369308204175229" type="BreadBoy">
-                    <param id="0" name="Animation">&quot;Jump&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="3505576473013999">
-            <conditions>
-                <condition id="0" name="On key pressed" sid="2154042619085364" type="Keyboard">
-                    <param id="0" name="Key">39 (Right arrow)</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="193391781300822" type="BreadBoy">
-                    <param id="0" name="Animation">&quot;Run&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="4288373897833695">
-            <conditions>
-                <condition id="0" name="On key pressed" sid="3363876041420579" type="Keyboard">
-                    <param id="0" name="Key">37 (Left arrow)</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="6297068207212877" type="BreadBoy">
-                    <param id="0" name="Animation">&quot;Run&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="8027785546961777">
-            <conditions>
-                <condition id="3" name="On key released" sid="1827969393888196" type="Keyboard">
-                    <param id="0" name="Key">38 (Up arrow)</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="7256308311296783" type="BreadBoy">
-                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="1355334406749514">
-            <conditions>
-                <condition id="3" name="On key released" sid="4540833692577062" type="Keyboard">
-                    <param id="0" name="Key">39 (Right arrow)</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="862623393647578" type="BreadBoy">
-                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="6419235587247785">
-            <conditions>
-                <condition id="3" name="On key released" sid="3656310855797948" type="Keyboard">
-                    <param id="0" name="Key">37 (Left arrow)</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="3395711399726754" type="BreadBoy">
-                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="5224581092726499">
-            <conditions>
-                <condition id="0" name="On key pressed" sid="3929698353664284" type="Keyboard">
-                    <param id="0" name="Key">37 (Left arrow)</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="7" name="Set mirrored" sid="3065687973495434" type="BreadBoy">
-                    <param id="0" name="State">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="932374129835934">
-            <conditions>
-                <condition id="3" name="On key released" sid="920459868494713" type="Keyboard">
-                    <param id="0" name="Key">37 (Left arrow)</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="7" name="Set mirrored" sid="3348259044392705" type="BreadBoy">
-                    <param id="0" name="State">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="7018605227566768">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="9155521043302848" type="BreadBoy">
-                    <param id="0" name="Object">rollingPin</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-11" name="Subtract from" sid="8394668911864684" type="System">
-                    <param id="0" name="Variable">Health</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-                <action id="3" name="Set progress" sid="471552444906847" type="ProgressBar">
-                    <param id="0" name="Value">ProgressBar.Progress-1</param>
-                </action>
-            </actions>
-        </event-block>
+        <event-group description="" sid="2991116736178384" title="Controls2">
+            <sub-events>
+                <event-block sid="9383908818250372">
+                    <conditions>
+                        <condition behavior="Platform" id="5" name="On jump" sid="5752863919423936" type="BreadBoy" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="6475017628718283" type="BreadBoy">
+                            <param id="0" name="Animation">&quot;Jump&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-group description="" sid="9949486382580182" title="Shots7">
+                    <sub-events>
+                        <event-block sid="622852721926109">
+                            <conditions>
+                                <condition id="3" name="On key released" sid="685993618407616" type="Keyboard">
+                                    <param id="0" name="Key">90 (Z)</param>
+                                </condition>
+                                <condition id="7" inverted="1" name="Is mirrored" sid="2013285933882281" type="BreadBoy" />
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="5717091892126469" type="System">
+                                    <param id="0" name="Object to create">breadshot</param>
+                                    <param id="1" name="Layer">&quot;Main&quot;</param>
+                                    <param id="2" name="X">BreadBoy.X+BreadBoy.Width</param>
+                                    <param id="3" name="Y">BreadBoy.Y-2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="4844451935700866">
+                            <conditions>
+                                <condition id="3" name="On key released" sid="5820945556990888" type="Keyboard">
+                                    <param id="0" name="Key">90 (Z)</param>
+                                </condition>
+                                <condition id="7" name="Is mirrored" sid="2339949268361889" type="BreadBoy" />
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="9792848519623172" type="System">
+                                    <param id="0" name="Object to create">breadshot</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="X">BreadBoy.X+BreadBoy.Width</param>
+                                    <param id="3" name="Y">Breadboy.Y+2</param>
+                                </action>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="6911824755870758" type="breadshot">
+                                    <param id="0" name="Angle">180</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-block sid="5453087166738244">
+                    <conditions>
+                        <condition id="-9" name="Is visible" sid="4149204743068547" type="BreadBoy" />
+                    </conditions>
+                    <actions>
+                        <action behavior="ScrollTo" id="1" name="Set enabled" sid="386971898505015" type="BreadBoy">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7779702036360874">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="6223146784347324" type="Keyboard">
+                            <param id="0" name="Key">39 (Right arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="7528475843605697" type="BreadBoy">
+                            <param id="0" name="Animation">&quot;Run&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8649607070472659">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="1461019221015328" type="Keyboard">
+                            <param id="0" name="Key">37 (Left arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="8410604821367621" type="BreadBoy">
+                            <param id="0" name="Animation">&quot;Run&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9079351748891495">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="9140741143482071" type="Keyboard">
+                            <param id="0" name="Key">81 (Q)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set time scale" sid="1621993507241927" type="System">
+                            <param id="0" name="Time scale">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8418113028121392">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="6871584332056417" type="Keyboard">
+                            <param id="0" name="Key">87 (W)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set time scale" sid="4282702712708502" type="System">
+                            <param id="0" name="Time scale">1.0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="853853707316522">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="3825687247039832" type="Keyboard">
+                            <param id="0" name="Key">38 (Up arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="2370850858786273" type="BreadBoy">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8677604758664742">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="554651360982258" type="Keyboard">
+                            <param id="0" name="Key">39 (Right arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="4000324787090444" type="BreadBoy">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5724116492620331">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="9548059926051844" type="Keyboard">
+                            <param id="0" name="Key">37 (Left arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="5055305421226694" type="BreadBoy">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3047744152441177">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="5446107959143101" type="Keyboard">
+                            <param id="0" name="Key">37 (Left arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="8526573456253239" type="BreadBoy">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1316911823774656">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="9662433919145718" type="Keyboard">
+                            <param id="0" name="Key">37 (Left arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="3309780295804251" type="BreadBoy">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
         <event-block sid="9395307864277809">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="4612882239529951" type="System">
@@ -158,22 +195,6 @@
                 <action id="-9" name="Destroy" sid="2268499403075944" type="BreadBoy" />
             </actions>
         </event-block>
-        <event-block sid="5527584271743534">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="8321437215630847" type="BreadBoy">
-                    <param id="0" name="Object">Mold</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-11" name="Subtract from" sid="1245936195028088" type="System">
-                    <param id="0" name="Variable">Health</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-                <action id="3" name="Set progress" sid="8357364529007599" type="ProgressBar">
-                    <param id="0" name="Value">ProgressBar.Progress-1</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="7051856499178404">
             <conditions>
                 <condition id="-19" name="On destroyed" sid="956762855917273" type="BreadBoy" />
@@ -184,127 +205,216 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="9473682738335303">
+        <event-block sid="3548464825420794">
             <conditions>
-                <condition id="-2" name="On start of layout" sid="4345602746512323" type="System" />
-            </conditions>
-            <actions>
-                <action behavior="Bullet" id="3" name="Set angle of motion" sid="7431578897536324" type="Mold">
-                    <param id="0" name="Angle">180</param>
-                </action>
-                <action behavior="Bullet" id="3" name="Set angle of motion" sid="7013586021994006" type="Duck">
-                    <param id="0" name="Angle">180</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="3227860283395083">
-            <conditions>
-                <condition id="-6" name="Every X seconds" sid="6411292376435408" type="System">
-                    <param id="0" name="Interval (seconds)">1</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-3" name="Create object" sid="3914346139386813" type="System">
-                    <param id="0" name="Object to create">Mold</param>
-                    <param id="1" name="Layer">&quot;Main&quot;</param>
-                    <param id="2" name="X">900</param>
-                    <param id="3" name="Y">random(68,460)</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="415476761063345">
-            <conditions>
-                <condition id="-6" name="Every X seconds" sid="6964674302245401" type="System">
-                    <param id="0" name="Interval (seconds)">1</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-3" name="Create object" sid="1577510674209705" type="System">
-                    <param id="0" name="Object to create">rollingPin</param>
-                    <param id="1" name="Layer">&quot;Main&quot;</param>
-                    <param id="2" name="X">900</param>
-                    <param id="3" name="Y">random(68,460)</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="3302449426386629">
-            <conditions>
-                <condition id="-18" name="On created" sid="4771617204854342" type="Mold" />
-            </conditions>
-            <actions>
-                <action behavior="Bullet" id="3" name="Set angle of motion" sid="6080418808636011" type="Mold">
-                    <param id="0" name="Angle">180</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="7701337019793254">
-            <conditions>
-                <condition id="-18" name="On created" sid="2703397281671023" type="Mold" />
-            </conditions>
-            <actions>
-                <action behavior="Bullet" id="3" name="Set angle of motion" sid="4316665094014273" type="Duck">
-                    <param id="0" name="Angle">180</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="3293875714853882">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="3784289827281515" type="breadshot">
-                    <param id="0" name="Object">Mold</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="4001526441562383" type="Mold" />
-                <action id="-9" name="Destroy" sid="3438151417343731" type="breadshot" />
-            </actions>
-        </event-block>
-        <event-block sid="8650116254351298">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="333346269936363" type="breadshot">
-                    <param id="0" name="Object">rollingPin</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="9373431720460749" type="rollingPin" />
-                <action id="-9" name="Destroy" sid="4618382201479567" type="breadshot" />
-            </actions>
-        </event-block>
-        <event-block any="1" sid="7954948717713403">
-            <conditions>
-                <condition id="-19" name="On destroyed" sid="999229385647304" type="Mold" />
-                <condition id="-19" name="On destroyed" sid="4368521485387096" type="rollingPin" />
-            </conditions>
-            <actions>
-                <action id="-10" name="Add to" sid="7596941296992762" type="System">
-                    <param id="0" name="Variable">Score</param>
-                    <param id="1" name="Value">10</param>
-                </action>
-                <action id="0" name="Set text" sid="8827613448976039" type="Score">
-                    <param id="0" name="Text">&quot;Score: &quot;&amp;Score</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="2306220080127043">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="3114328897993183" type="System">
+                <condition id="-14" name="Compare variable" sid="6107595410881841" type="System">
                     <param id="0" name="Variable">Score</param>
                     <param id="1" name="Comparison">5</param>
-                    <param id="2" name="Value">100</param>
+                    <param id="2" name="Value">400</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-2" name="Go to layout" sid="5175190924907524" type="System">
-                    <param id="0" name="Layout">Controls</param>
+                <action id="-2" name="Go to layout" sid="2123391960130689" type="System">
+                    <param id="0" name="Layout">Credits</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="7628507113216202">
+        <event-group description="" sid="2154195341760912" title="Shots5">
+            <sub-events>
+                <event-block sid="622852721926109">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="685993618407616" type="Keyboard">
+                            <param id="0" name="Key">90 (Z)</param>
+                        </condition>
+                        <condition id="7" inverted="1" name="Is mirrored" sid="2013285933882281" type="BreadBoy" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="5717091892126469" type="System">
+                            <param id="0" name="Object to create">breadshot</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">BreadBoy.X+BreadBoy.Width</param>
+                            <param id="3" name="Y">BreadBoy.Y-2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4844451935700866">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="5820945556990888" type="Keyboard">
+                            <param id="0" name="Key">90 (Z)</param>
+                        </condition>
+                        <condition id="7" name="Is mirrored" sid="2339949268361889" type="BreadBoy" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="9792848519623172" type="System">
+                            <param id="0" name="Object to create">breadshot</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">BreadBoy.X+BreadBoy.Width</param>
+                            <param id="3" name="Y">Breadboy.Y+2</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="6911824755870758" type="breadshot">
+                            <param id="0" name="Angle">180</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <variable constant="0" name="Score2" sid="162314512298281" static="0" type="number">0</variable>
+        <variable constant="0" name="Health2" sid="7242915247037247" static="0" type="number">3</variable>
+        <variable constant="0" name="Life2" sid="988603465377425" static="0" type="number">1</variable>
+        <event-block sid="8617148885630232">
             <conditions>
-                <condition id="-18" name="On created" sid="3038884076981031" type="rollingPin" />
+                <condition id="-14" name="Compare variable" sid="4625422713188717" type="System">
+                    <param id="0" name="Variable">Health</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
             </conditions>
             <actions>
-                <action behavior="Bullet" id="3" name="Set angle of motion" sid="9207524244318432" type="rollingPin">
+                <action id="-9" name="Destroy" sid="4128468037482904" type="BreadBoy" />
+            </actions>
+        </event-block>
+        <event-block sid="9121819859486994">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="6240888873159273" type="BreadBoy" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="7343956341230221" type="System">
+                    <param id="0" name="Layout">Game over</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7552043221204824">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="5252794469170148" type="System">
+                    <param id="0" name="Interval (seconds)">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="1984969096060876" type="Toaster">
+                    <param id="0" name="Object">Fire</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="6303844666435896" type="Fire">
                     <param id="0" name="Angle">180</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="3854970464918109" title="Toaster">
+            <sub-events>
+                <event-block sid="9043601786601019">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="8038175401612557" type="breadshot">
+                            <param id="0" name="Object">Toaster</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="4497643201169054" type="Toaster">
+                            <param id="0" name="Instance variable">Health</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="2677286290053891" type="HEALTHHHHH">
+                            <param id="0" name="Text">&quot;Health: &quot;&amp;Toaster.Health</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1638932303805033">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="5665070544899735" type="Toaster">
+                            <param id="0" name="Instance variable">Health</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="8938998331162814" type="Toaster" />
+                    </actions>
+                </event-block>
+                <event-block sid="3293875714853882">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="3784289827281515" type="breadshot">
+                            <param id="0" name="Object">Toaster</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="3438151417343731" type="breadshot" />
+                    </actions>
+                </event-block>
+                <event-block sid="5527584271743534">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="8321437215630847" type="BreadBoy">
+                            <param id="0" name="Object">Toaster</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="1245936195028088" type="System">
+                            <param id="0" name="Variable">Health</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="3" name="Set progress" sid="8357364529007599" type="ProgressBar">
+                            <param id="0" name="Value">ProgressBar.Progress-1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2306220080127043">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="3114328897993183" type="Toaster" />
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="5175190924907524" type="System">
+                            <param id="0" name="Layout">Credits</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="6003271752750761">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5451148350843954" type="BreadBoy">
+                    <param id="0" name="Object">Fire</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="4010128132284255" type="System">
+                    <param id="0" name="Variable">Health</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="3" name="Set progress" sid="7477767012220033" type="ProgressBar">
+                    <param id="0" name="Value">ProgressBar.Progress-1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8238317870204493">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="1905783322237246" type="System">
+                    <param id="0" name="Interval (seconds)">random(1,3)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="7956622284594721" type="System">
+                    <param id="0" name="Object to create">Static</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">690</param>
+                    <param id="3" name="Y">random(233,300)</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="867767899914612" type="Static">
+                    <param id="0" name="Angle">180</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="254973614852326">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8543121918781297" type="BreadBoy">
+                    <param id="0" name="Object">Static</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="5070562140547168" type="System">
+                    <param id="0" name="Variable">Health</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="3" name="Set progress" sid="2403449747713357" type="ProgressBar">
+                    <param id="0" name="Value">ProgressBar.Progress-1</param>
                 </action>
             </actions>
         </event-block>

@@ -107,7 +107,7 @@
                 </instance>
                 <instance type="ControlsNames" uid="192">
                     <properties>
-                        <text>While Jumping, hold left or right arrow to use a slide move</text>
+                        <text>To beat each level, score 100 points by killing enemies</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Bauhaus 93,-21,400,0</font>
                         <color>0,0,0</color>
