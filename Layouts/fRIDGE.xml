@@ -218,7 +218,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Sprite2" uid="161">
+                <instance type="PanThing" uid="161">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -247,7 +247,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite2" uid="162">
+                <instance type="PanThing" uid="162">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -269,28 +269,6 @@
                         <z>0</z>
                         <width>-556</width>
                         <height>284</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Sprite3" uid="171">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>641</x>
-                        <y>675</y>
-                        <z>0</z>
-                        <width>250</width>
-                        <height>250</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -507,8 +485,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>157.890014648</x>
-                        <y>9.954332352</y>
+                        <x>160</x>
+                        <y>13</y>
                         <z>0</z>
                         <width>200</width>
                         <height>30</height>
