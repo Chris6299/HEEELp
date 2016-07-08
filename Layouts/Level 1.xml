@@ -3451,10 +3451,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>929.063415527</x>
-                        <y>403.775177002</y>
+                        <x>923.811157227</x>
+                        <y>403.77520752</y>
                         <z>0</z>
-                        <width>11.368286133</width>
+                        <width>22.74822998</width>
                         <height>10.369689941</height>
                         <depth>0</depth>
                         <hotspotX>0.538461566</hotspotX>

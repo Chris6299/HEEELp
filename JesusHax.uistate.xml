@@ -10,14 +10,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">Level 1</layout>
+        <layout order="0">Level 1</layout>
         <layout order="2">Kitchen</layout>
         <layout order="4">fRIDGE</layout>
         <layout order="6">Oven</layout>
         <event-sheet order="1">Level 1</event-sheet>
-        <event-sheet order="5">Fridge</event-sheet>
+        <event-sheet active="1" order="5">Fridge</event-sheet>
         <event-sheet order="7">OVENN</event-sheet>
-        <event-sheet order="3">Event sheet 6</event-sheet>
+        <event-sheet order="3">Kitchen</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -46,13 +46,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Kitchen/" />
         <folder expanded="1" path="animation-folder/Table/" />
         <folder expanded="1" path="animation-folder/Cereal/" />
-        <folder expanded="1" path="animation-folder/Sprite6/" />
+        <folder expanded="1" path="animation-folder/Refiger/" />
         <folder expanded="1" path="animation-folder/Mold/" />
         <folder expanded="1" path="animation-folder/rollingPin/" />
-        <folder expanded="1" path="animation-folder/Sprite/" />
         <folder expanded="1" path="animation-folder/Freezer/" />
-        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/PanThing/" />
         <folder expanded="1" path="animation-folder/InvisibleWall/" />
-        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/Oven/" />
+        <folder expanded="1" path="animation-folder/Toaster/" />
     </folders-expanded>
 </c2uistate>
